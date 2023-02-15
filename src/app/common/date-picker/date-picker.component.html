@@ -1,0 +1,17 @@
+
+
+
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime" presentation="month-year"></ion-datetime>
+  </ng-template>
+</ion-modal>
+
+<ion-item lines="full">
+  <ion-label>Select Year and Month</ion-label>
+  <ion-datetime-button slot="end" datetime="datetime"></ion-datetime-button>
+</ion-item>
+
+
+

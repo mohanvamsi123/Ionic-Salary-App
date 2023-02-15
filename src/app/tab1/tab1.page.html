@@ -1,0 +1,54 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Summary
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+<ion-content [fullscreen]="true">
+  
+  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <app-date-picker></app-date-picker>
+
+  <app-profile-display></app-profile-display>
+  
+
+  <ion-list lines="none">
+    <ion-list-header lines="full">
+      <ion-label>Gross</ion-label>
+
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Earnings</ion-label>
+      <ion-label></ion-label>
+      <ion-label class="currency-label">{{234567 | currency}}</ion-label>
+
+    </ion-item>
+    <ion-list-header lines="full">
+      <ion-label>Deductions</ion-label>
+     
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Deductions</ion-label>
+      <ion-label></ion-label>
+      <ion-label class="currency-label">{{12300 | currency}}</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+<ion-list lines="full">
+  <ion-list-header lines="full">
+    <ion-label>Net Pay</ion-label>
+   
+  </ion-list-header>
+  <ion-item>
+    <ion-label>Total</ion-label>
+    <ion-label></ion-label>
+    <ion-label class="currency-label">{{222267 | currency}}</ion-label>
+  </ion-item>
+  
+</ion-list>
+
+  
+</ion-content>

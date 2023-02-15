@@ -1,0 +1,119 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Earnings
+    </ion-title>
+  </ion-toolbar>
+  </ion-header>
+<ion-content [fullscreen]="true">
+  
+
+  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <app-date-picker></app-date-picker>
+  <!--
+  <ion-item lines="none">
+    <ion-thumbnail slot="start">
+      <img
+        alt="Silhouette of mountains"
+        src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
+      />
+    </ion-thumbnail>
+    <ion-label>
+      <h1>Mohan Vamsi Darisi</h1>
+      <p>Factset</p>
+    </ion-label>
+  </ion-item>
+-->
+  <ion-item lines="none">
+    <ion-label style="text-align:center">
+      <ion-note>Net Pay</ion-note>
+      <h1>{{ 20800 | currency }}</h1>
+    </ion-label>
+  </ion-item>
+  <!--
+  <ion-item lines="none" style="padding: 5px;">
+    <ion-button slot="start" size="default" color="danger">
+      <ion-icon slot="start" name="document-text-outline"></ion-icon>
+      View as PDF
+    </ion-button>
+    <ion-button slot="end" size="default" color="warning">
+      <ion-icon slot="start" name="mail-unread-outline"></ion-icon>
+      Send Mail
+    </ion-button>
+  </ion-item>
+-->
+  <ion-list>
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label> Earnings </ion-label>
+        <ion-label slot="end"> Rs </ion-label>
+      </ion-item-divider>
+  
+      <ion-item>
+        <ion-label>Basic</ion-label>
+        <ion-label slot="end">{{ 844180.0 | currency }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Special Allowance</ion-label>
+        <ion-label slot="end">{{ 13750 | currency }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Incentive</ion-label>
+        <ion-label slot="end">{{ 1345600 | currency }}</ion-label>
+      </ion-item>
+      <ion-item >
+        <ion-label>Gross Earnings</ion-label>
+        <ion-label slot="end">{{ 2203530 | currency }}</ion-label>
+      </ion-item>
+      <!--X
+      <ion-item lines="none">
+        <ion-label><b>Net Pay</b></ion-label>
+        <ion-label slot="end"><b>{{ 844180.0 | currency }}</b></ion-label>
+      </ion-item>
+    -->
+    </ion-item-group>
+  
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label> Deductions </ion-label>
+        <ion-label slot="end"> Rs </ion-label>
+      </ion-item-divider>
+  
+      <ion-item>
+        <ion-label>Professional Tax</ion-label>
+        <ion-label slot="end">{{ 200 | currency }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Provident Fund(PF)</ion-label>
+        <ion-label slot="end">{{ 101302 | currency }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Income Tax</ion-label>
+        <ion-label slot="end">{{ 995140 | currency }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><b>Gross Deductions</b></ion-label>
+        <ion-label slot="end"><b>{{ 1096642 | currency }}</b></ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label><b>Net Pay</b></ion-label>
+        <ion-label slot="end"><b>{{ 844180.0 | currency }}</b></ion-label>
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button download="https://ionicframework.com/docs/api/fab-button"> 
+        <ion-icon name="download"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="mail"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ionic-salary",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
